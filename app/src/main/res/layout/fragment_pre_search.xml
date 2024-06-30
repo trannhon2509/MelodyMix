@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PreSearch">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/searchTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:gravity="start"
+                android:text="Search"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchTxt"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/search"
+                android:gravity="center_vertical"
+                android:text="Artists, songs or podcasts"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/genresTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/searchBtn"
+                android:layout_marginBottom="20dp"
+                android:text="Your top genres"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/genresLayout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/genresTxt"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="Genre 1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/popmusic"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="Genre 2"
+                    android:scaleType="centerCrop"
+                    android:padding="5dp"
+                    android:src="@drawable/indiemusic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/popularTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/genresLayout"
+                android:layout_marginBottom="20dp"
+                android:text="Popular categories"
+                android:textColor="@color/white"
+                />
+
+            <LinearLayout
+                android:id="@+id/popularLayout"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/popularTxt"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="Genre 1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/popmusic"
+                    android:padding="5dp"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="Genre 2"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/indiemusic" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/allTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popularLayout"
+                android:layout_marginBottom="20dp"
+                android:text="Browse all"
+                android:textColor="@color/white"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/allTxt"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="Genre 1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/popmusic"
+                        android:padding="5dp"
+                        />
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="Genre 2"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:src="@drawable/indiemusic" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="Genre 1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/popmusic"
+                        android:padding="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="Genre 2"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:src="@drawable/indiemusic" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="Genre 1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/popmusic"
+                        android:padding="5dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:contentDescription="Genre 2"
+                        android:scaleType="centerCrop"
+                        android:padding="5dp"
+                        android:src="@drawable/indiemusic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
