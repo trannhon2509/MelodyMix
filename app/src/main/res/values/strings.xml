@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">MelodyMix</string>
+    <string name="avatar_description">Avatar</string>
+    <string name="back_button_description">Back</string>
+    <string name="setting_button_description">Setting</string>
+    <string name="more_button_description">View</string>
+    <string name="image_button_description">Image</string>
 </resources>
