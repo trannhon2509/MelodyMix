@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <!-- Các thành phần giao diện khác trong ConstraintLayout -->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="199dp"
+        android:layout_height="169dp"
+        app:srcCompat="@drawable/screen_shot_2021_12_08_at_17_49_1"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="26dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="118dp"
+        android:layout_height="34dp"
+        android:text=" album"
+        android:textColor="#EDE7E7"
+        android:textSize="34sp"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="214dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="casi"
+        android:textColor="#F8EFEF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="263dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="295dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButton9"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Like button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vector"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/likeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Like"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/imageButton9"
+            app:layout_constraintStart_toEndOf="@id/imageButton9"
+            app:layout_constraintTop_toTopOf="@id/imageButton9" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="367dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButton10"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="View artist"
+            app:srcCompat="@drawable/component_2"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="View artist"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="438dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButton11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Share button"
+            app:srcCompat="@drawable/share"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Share"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="511dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButton12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Like all songs"
+            app:srcCompat="@drawable/vector"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Like all songs"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="580dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/imageButton13"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Add to playlist"
+            app:srcCompat="@drawable/component_32"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:text="Add to playlist"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

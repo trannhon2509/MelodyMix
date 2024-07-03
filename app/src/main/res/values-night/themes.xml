@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.MelodyMix" parent="Theme.Material3.DayNight.NoActionBar">
+<<<<<<< HEAD
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -19,5 +20,9 @@
 
     <style name="SeekBarTheme" parent="Widget.AppCompat.SeekBar">
         <item name="colorAccent">@color/colorAccent</item>
+=======
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+>>>>>>> 04e530d (Initial commit)
     </style>
 </resources>
